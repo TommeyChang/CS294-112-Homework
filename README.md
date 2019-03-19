@@ -55,6 +55,8 @@ The following tables and figures show the experimental results. The results of t
 ![](fig/hopper.png)
 
 ### Humanoid-v2
+| Method             | Mean Return | Standard Deviation |
+|:--------------------:|:-------------:|:--------------------:|
 | Expert           | 10410.438   | 66.743            |
 | Behavioral Cloning | 370.704     | 63.819             |
 | Data Aggregation  | 4531.564 | 3049.694 |
@@ -63,6 +65,8 @@ The following tables and figures show the experimental results. The results of t
 
 
 ### Reacher-v2
+| Method             | Mean Return | Standard Deviation |
+|:--------------------:|:-------------:|:--------------------:|
 | Expert           | -4.088      | 1.654              |
 | Behavioral Cloning | -6.844     | 1.664              |
 | Data Aggregation  | -3.945 | 1.414 |
@@ -70,6 +74,8 @@ The following tables and figures show the experimental results. The results of t
 ![](fig/reacher.png)
 
 ### Walker2d-v2
+| Method             | Mean Return | Standard Deviation |
+|:--------------------:|:-------------:|:--------------------:|
 | Expert           | 5526.236    | 50.480             |
 | Behavioral Cloning | 17.218     | 1.275              |
 | Data Aggregation  | 4682.141 | 1047.966 |
