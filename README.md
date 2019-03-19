@@ -43,7 +43,7 @@ The following tables and figures show the experimental results. The results of t
 | Behavioral Cloning | 867.088     | 222.831            |
 | Data Aggregation  | 4059.706 | 113.824 |
 
-![](fig/halfcheetah.png)
+![](fig/halfcheet.png)
 
 ### Hopper-v2
 | Method             | Mean Return | Standard Deviation |
