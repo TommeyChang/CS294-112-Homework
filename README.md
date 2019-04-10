@@ -101,13 +101,14 @@ Then graph the results of the experiments using the plot.py file.
 ### Problem 5. InvertedPendulum
 Run experiments in InvertedPendulum-v2 continuous control environment. In order to find smallest batch size and largest learning rate more easily, parameter `--param_search` is set. Two experiments have been maken, the batch size are [10, 100, 1000, 5000], one learning rate is \in [0.0001, 0.001, 0.01, 0.1, 1], the other is \in [0.005, 0.01, 0.015, 0.02]. 
 #### Coarse Search [0.0001, 0.001, 0.01, 0.1, 1]
-![](fig/pg_sb.png)
+![](fig/br_search_coarse.png)
 #### Fine search [0.005, 0.01, 0.015, 0.02]
-![](fig/pg_sb.png)
+![](fig/br_search_fine.png)
 
 ### Problem 7. LuanarLander
 Before starting this experiment, the box2d-py must be installed. The result is as follows:
 ![](fig/ll_baseline.png)
+The batch size is 40000, which I made a mistake
 
 
 
