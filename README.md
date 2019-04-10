@@ -10,7 +10,7 @@ Thanks to [Markpen](https://github.com/PengZhenghao/CS294-Homework)
 You can run `bash run.sh` file at each directory, which contains generate the expert data, behavioral cloning and data aggregate three phases. 
 In order to save time, the data aggregate phase just give the Hopper-v2.
 
-## HW1 (Behavioral Cloning)
+## HW1: Behavioral Cloning
 
 We use a 4-layer MLP as the policy network. The next table presents the hyperparameter used for this experiment.
 
@@ -81,4 +81,34 @@ The following tables and figures show the experimental results. The results of t
 | Data Aggregation  | 4682.141 | 1047.966 |
 
 ![](fig/walker.png)
+
+## HW2: Policy Grandient
+
+### Prolbem4. CartPole 
+Run the PG algorithm in the discrete CartPole-v0 environment with the setting as follows:
+* -n 100 -b 1000 -e 3 -dna --exp_name sb_no_rtg_dna
+* -n 100 -b 1000 -e 3 -rtg -dna --exp_name sb_rtg_dna
+* -n 100 -b 1000 -e 3 -rtg --exp_name sb_rtg_na
+* -n 100 -b 5000 -e 3 -dna --exp_name lb_no_rtg_dna
+* -n 100 -b 5000 -e 3 -rtg -dna --exp_name lb_rtg_dna
+* -n 100 -b 5000 -e 3 -rtg --exp_name lb_rtg_na
+Then graph the results of the experiments using the plot.py file. 
+#### Small batch size
+![](fig/pg_sb.png)
+#### Large batch size
+![](fig/pg_lb.png)
+
+### Problem 5. InvertedPendulum
+Run experiments in InvertedPendulum-v2 continuous control environment. In order to find smallest batch size and largest learning rate more easily, parameter `--param_search` is set. Two experiments have been maken, the batch size are [10, 100, 1000, 5000], one learning rate is \in [0.0001, 0.001, 0.01, 0.1, 1], the other is \in [0.005, 0.01, 0.015, 0.02]. 
+#### Coarse Search [0.0001, 0.001, 0.01, 0.1, 1]
+![](fig/pg_sb.png)
+#### Fine search [0.005, 0.01, 0.015, 0.02]
+![](fig/pg_sb.png)
+
+### Problem 7. LuanarLander
+Before starting this experiment, the box2d-py must be installed. The result is as follows:
+![](fig/ll_baseline.png)
+
+
+
 
