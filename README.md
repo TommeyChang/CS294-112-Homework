@@ -92,6 +92,7 @@ Run the PG algorithm in the discrete CartPole-v0 environment with the setting as
 * -n 100 -b 5000 -e 3 -dna --exp_name lb_no_rtg_dna
 * -n 100 -b 5000 -e 3 -rtg -dna --exp_name lb_rtg_dna
 * -n 100 -b 5000 -e 3 -rtg --exp_name lb_rtg_na
+
 Then graph the results of the experiments using the plot.py file. 
 #### Small batch size
 ![](fig/pg_sb.png)
@@ -108,7 +109,13 @@ Run experiments in InvertedPendulum-v2 continuous control environment. In order 
 ### Problem 7. LuanarLander
 Before starting this experiment, the box2d-py must be installed. The result is as follows:
 ![](fig/ll_baseline.png)
-The batch size is 40000, which I made a mistake
+The batch size is 40000.
+
+### Problem8. HalfCheetah
+#### Parameters search
+![](fig/hc_search.png)
+#### Effictive of reward-to-go and baseline
+![](fig/hc_compare.png)
 
 
 
